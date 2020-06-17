@@ -30,4 +30,9 @@ public class PropertyListingServiceImpl implements PropertyListingService {
 			}).get();
 	}
 
+	@Override
+	public void deleteProperty(Long id) {
+		repository.deleteById(id);
+	}
+
 }
